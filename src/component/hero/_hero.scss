@@ -1,0 +1,24 @@
+.heroBanner {
+  background: #28293e;
+  color: white;
+  padding-top: 80px;
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 64px; /* 114.286% */
+    letter-spacing: -1px;
+  }
+  .description {
+    line-height: 32px;
+  }
+  .heroBanner__cta {
+    display: flex;
+    justify-content: space-between;
+    .contact {
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 32px;
+    }
+  }
+}
