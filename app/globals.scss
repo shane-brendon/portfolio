@@ -1,65 +1,111 @@
-
 /* CSS Reset */
 
 /* Box sizing border-box */
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Epilogue";
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set default font size and line height */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Remove list styles */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Remove default hyperlink styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove default outline styles */
+a:focus,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+/* Remove default form field styles */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Set images to be responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Additional Resets */
+/* Add any additional resets or customizations here */
+.container {
+  margin: 0 8.437rem;
+  @media screen and (max-width: 801px) {
+    margin: 0 1.437rem;
   }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
-  /* Remove default margin and padding */
-  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Set default font size and line height */
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
-  /* Remove list styles */
-  ol, ul {
-    list-style: none;
-  }
-  
-  /* Remove default hyperlink styles */
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  /* Remove default outline styles */
-  a:focus, input:focus, select:focus, textarea:focus, button:focus {
-    outline: none;
-  }
-  
-  /* Remove default form field styles */
-  button, input, select, textarea {
-    margin: 0;
-    padding: 0;
-    border: none;
-    background: none;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-  }
-  
-  /* Set images to be responsive */
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Additional Resets */
-  /* Add any additional resets or customizations here */
-  .container {
-    margin: 0 8.437rem;
-    @media screen and (max-width: 801px) {
-        margin: 0 1.437rem;
-    }
-  }
+}
+
+.caption {
+  color: #ef6d58;
+  line-height: 32px; /* 200% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  border-radius: 6px;
+  color: #fff;
+  text-align: center;
+  font-family: Epilogue;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.orange {
+  background-color: #ef6d58;
+}
