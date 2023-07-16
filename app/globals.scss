@@ -89,6 +89,16 @@ img {
   letter-spacing: 3px;
   text-transform: uppercase;
 }
+.description {
+  color: var(--text-light-gray, rgba(255, 255, 255, 0.64));
+
+  /* Text */
+  font-family: Epilogue;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 200% */
+}
 
 .btn {
   display: flex;
