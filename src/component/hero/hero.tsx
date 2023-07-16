@@ -6,7 +6,7 @@ const hero = () => {
   return (
     <section className="heroBanner">
       <div className="container">
-        <img src="/Bitmap.png" alt="" width="100%" height="100%" />
+        <img src="/pic.png" alt="" width="100%" height="100%" />
         <div className="heroBanner__content">
           <span className="caption">Modern Studio</span>
           <h1>We’re Help To Build Your Dream Project</h1>
@@ -16,8 +16,7 @@ const hero = () => {
               design, business understanding.
             </p>
           </div>
-        </div>
-        <div className="heroBanner__cta">
+          <div className="heroBanner__cta">
           <Link className="btn orange" rel="stylesheet" href="">
             How we work
           </Link>
@@ -36,6 +35,8 @@ const hero = () => {
             <div className="heroBanner__testimony--company">Meta Inc.</div>
           </div>
         </div>
+        </div>
+
       </div>
     </section>
   );
