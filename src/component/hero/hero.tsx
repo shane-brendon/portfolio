@@ -6,12 +6,15 @@ const hero = () => {
   return (
     <section className="heroBanner">
       <div className="container">
-        <img src="/Bitmap.png" alt="" width="100%" height="100%"/>
+        <img src="/Bitmap.png" alt="" width="100%" height="100%" />
         <div className="heroBanner__content">
           <span className="caption">Modern Studio</span>
           <h1>We’re Help To Build Your Dream Project</h1>
-          <div className="heroBanner__description">
-            <p>Agency provides a full service range including technical skills, design, business understanding.</p>
+          <div className="description">
+            <p>
+              Agency provides a full service range including technical skills,
+              design, business understanding.
+            </p>
           </div>
         </div>
         <div className="heroBanner__cta">
@@ -21,6 +24,17 @@ const hero = () => {
           <Link className="btn contact" rel="stylesheet" href="">
             Contact us
           </Link>
+        </div>
+        <div className="heroBanner__testimony">
+          <div className="heroBanner__testimony--profile">
+            <img src="/profile.png" alt="" />
+          </div>
+          <div className="">
+            <div className="description">
+              <span>"Put themselves in the merchant's shoes"</span>
+            </div>
+            <div className="heroBanner__testimony--company">Meta Inc.</div>
+          </div>
         </div>
       </div>
     </section>

@@ -2,7 +2,6 @@
   background: #28293e;
   color: white;
   padding-top: 80px;
-
   h1 {
     font-size: 3.5rem;
     font-weight: 800;
@@ -10,7 +9,7 @@
     letter-spacing: -1px;
   }
   .description {
-    line-height: 32px;
+    margin: 12px 0;
   }
   .heroBanner__cta {
     display: flex;
@@ -19,6 +18,44 @@
       font-weight: 400;
       font-size: 1rem;
       line-height: 32px;
+      text-transform: unset;
+    }
+  }
+  .caption {
+    padding: 20px 0 30px;
+  }
+  &__cta {
+    padding-bottom: 44px;
+  }
+  &__testimony {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 44px;
+    &:after {
+      top: 0;
+      left: 0;
+      position: absolute;
+      content: "";
+      background: purple;
+      width: 3rem;
+      height: 3rem;
+      z-index: 1;
+      border-radius: 99px;
+    }
+    img {
+      position: relative;
+      z-index: 2;
+      left: 5px;
+      top: 5px;
+    }
+    .description {
+      margin: 0;
+      width: 100%;
+      span {
+        max-width: 80%;
+        display: block;
+      }
     }
   }
 }
