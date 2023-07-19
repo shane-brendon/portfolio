@@ -9,7 +9,7 @@
     letter-spacing: -1px;
   }
   .description {
-    margin: 12px 0;
+    margin: 12px 0 24px;
   }
   &__cta {
     display: flex;
@@ -19,6 +19,7 @@
       font-size: 1rem;
       line-height: 32px;
       text-transform: unset;
+      min-width: 172px;
     }
   }
   .caption {
@@ -97,6 +98,8 @@
         font-size: 1rem;
         line-height: 32px;
         text-transform: unset;
+        background-color: white;
+        color: black;
       }
     }
     &__testimony {
