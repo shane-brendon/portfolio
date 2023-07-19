@@ -6,23 +6,26 @@ const hero = () => {
   return (
     <section className="heroBanner">
       <div className="container">
-        <img src="/pic.png" alt="" width="100%" height="100%" />
-        <div className="heroBanner__content">
-          <span className="caption">Modern Studio</span>
-          <h1>We’re Help To Build Your Dream Project</h1>
-          <div className="description">
-            <p>
-              Agency provides a full service range including technical skills,
-              design, business understanding.
-            </p>
+        <div className="heroBanner__top">
+          <img src="/pic.png" alt="" width="100%" height="100%" />
+          <div className="heroBanner__content">
+            <span className="caption">Modern Studio</span>
+            <h1>We’re Help To Build Your Dream Project</h1>
+            <div className="description">
+              <p>
+                Agency provides a full service range including technical skills,
+                design, business understanding.
+              </p>
+            </div>
+            <div className="heroBanner__cta">
+              <Link className="btn orange" rel="stylesheet" href="">
+                How we work
+              </Link>
+              <Link className="btn contact" rel="stylesheet" href="">
+                Contact us
+              </Link>
+            </div>
           </div>
-          <div className="heroBanner__cta">
-          <Link className="btn orange" rel="stylesheet" href="">
-            How we work
-          </Link>
-          <Link className="btn contact" rel="stylesheet" href="">
-            Contact us
-          </Link>
         </div>
         <div className="heroBanner__testimony">
           <div className="heroBanner__testimony--profile">
@@ -35,8 +38,6 @@ const hero = () => {
             <div className="heroBanner__testimony--company">Meta Inc.</div>
           </div>
         </div>
-        </div>
-
       </div>
     </section>
   );

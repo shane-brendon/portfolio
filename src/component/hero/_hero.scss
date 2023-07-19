@@ -11,7 +11,7 @@
   .description {
     margin: 12px 0;
   }
-  .heroBanner__cta {
+  &__cta {
     display: flex;
     justify-content: space-between;
     .contact {
@@ -55,6 +55,59 @@
       span {
         max-width: 80%;
         display: block;
+      }
+    }
+  }
+  @media screen and (min-width: 640px) {
+    &__top {
+      display: flex;
+      flex-direction: row-reverse;
+      padding-top: 90px;
+      justify-content: space-between;
+      img {
+        width: 50%;
+        height: 70vh;
+      }
+    }
+    h1 {
+      font-family: "Epilogue";
+      font-size: 72px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 80px; /* 111.111% */
+      letter-spacing: -2px;
+      max-width: 560px;
+    }
+    &__content {
+      .caption {
+        margin-bottom: 32px;
+      }
+      .description {
+        max-width: 50%;
+        margin: 32px 0 54px;
+      }
+    }
+    &__cta {
+      display: flex;
+      justify-content: unset;
+      gap: 5rem;
+      .contact {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 32px;
+        text-transform: unset;
+      }
+    }
+    &__testimony {
+      justify-content: unset;
+      gap: 2rem;
+      .description {
+        margin: 0;
+        width: 100%;
+        span {
+          max-width: 100%;
+          display: block;
+        }
       }
     }
   }

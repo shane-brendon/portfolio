@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import './_header.scss'
+import 'src/component/header/_header.scss'
 const Header = () => {
   return (
     <header>
