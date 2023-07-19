@@ -1,0 +1,22 @@
+.secLogo {
+  background-color: #f7daca;
+  padding: 47px 0;
+  ul {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    row-gap: 24px;
+    column-gap: 34px;
+    place-items: center;
+    :last-child {
+      grid-area: 3/1/4/3;
+    }
+  }
+  @media screen and (min-width:640px) {
+    ul {
+      grid-template: 1fr / repeat(5, 1fr);
+      :last-child {
+        grid-area: unset;
+      }
+    }
+  }
+}
